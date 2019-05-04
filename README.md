@@ -3,10 +3,10 @@ automatically generating cover letter for job application purpose
 
 
 How to install:
-First, need to have pip3 to install requirements 
-Second, need to have python3
-Third, need to install python.docx library
-Fourth, (not need) but notice we have built-in function library json in python3
+First, need to have pip3 to install requirements.  
+Second, need to have python3.
+Third, need to install python.docx library.
+Fourth, (not need) but notice we have built-in function library json in python3.
 
 How to use:
 Run python main.py
