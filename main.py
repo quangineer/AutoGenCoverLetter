@@ -30,27 +30,26 @@ p3 = document.add_paragraph(data['To_Whom'])
 p3.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
 
 apply = data['Apply']
-apply1 = data['Rest of Apply']
 p4 = document.add_paragraph(apply + companyposition)
-p4.1 = p4.add_run(p4 + apply1 + companyname)
+p4 = p4.add_run(" at " + companyname + " where I can develop my technical skill and strive to grow my career within the company.")
 p4.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
 
 introduce = data['Introduce']
 p5 = document.add_paragraph(introduce)
 p5.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
 
-my_project = data['My_Project']
+my_project = data['Experience_that_fits']
 p6 = document.add_paragraph(my_project)
 p6.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
 
-my_business_background = data['My_business_background']
+my_business_background = data['My_characters']
 p7 = document.add_paragraph(my_business_background)
 p7.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
 
-my_attribute_and_contact1 = data['My_attribute_and_contact1']
-my_attribute_and_contact2 = data['My_attribute_and_contact2']
+my_attribute_and_contact1 = data['Thank_you']
+my_attribute_and_contact2 = data['Please_Contact_Me']
 p8 = document.add_paragraph(my_attribute_and_contact1)
-p8.add_run(companyname)
+p8.add_run(companyname + ".")
 p8.add_run(my_attribute_and_contact2)
 p8.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
 
