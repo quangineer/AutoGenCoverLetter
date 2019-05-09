@@ -49,7 +49,7 @@ p7.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
 my_attribute_and_contact1 = data['Thank_you']
 my_attribute_and_contact2 = data['Please_Contact_Me']
 p8 = document.add_paragraph(my_attribute_and_contact1)
-p8.add_run(companyname + ".")
+p8.add_run(companyname + ". ")
 p8.add_run(my_attribute_and_contact2)
 p8.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
 
