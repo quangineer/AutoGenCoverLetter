@@ -30,7 +30,9 @@ p3 = document.add_paragraph(data['To_Whom'])
 p3.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
 
 apply = data['Apply']
-p4 = document.add_paragraph(apply + companyposition + "\n" + "at" + "\n" + companyname)
+apply1 = data['Rest of Apply']
+p4 = document.add_paragraph(apply + companyposition)
+p4.1 = p4.add_run(p4 + apply1 + companyname)
 p4.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
 
 introduce = data['Introduce']
