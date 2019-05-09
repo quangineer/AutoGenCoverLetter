@@ -9,6 +9,8 @@ data = json.load(open('data.json'))
 # print (data)
 document = Document()
 currentDT = datetime.datetime.now()
+print ("Enter The Position to Apply:")
+companyposition = input()
 print ("Enter The Company Name:")
 companyname = input()
 
@@ -28,7 +30,7 @@ p3 = document.add_paragraph(data['To_Whom'])
 p3.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
 
 apply = data['Apply']
-p4 = document.add_paragraph(apply + companyname)
+p4 = document.add_paragraph(apply + companyposition + "\n" + "at" + "\n" + companyname)
 p4.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
 
 introduce = data['Introduce']
