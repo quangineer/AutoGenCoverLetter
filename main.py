@@ -15,10 +15,10 @@ companyname = input()
 p1 = document.add_heading(data['name'], 0)
 p1.add_run('\n')
 info_address = p1.add_run(data['contact'])
-info_address.font.size = Pt(12)
+info_address.font.size = Pt(10)
 p1.add_run('\n')
 info_github = p1.add_run(data['Github'])
-info_github.font.size = Pt(12)
+info_github.font.size = Pt(10)
 
 p2 = document.add_paragraph()
 p2.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
